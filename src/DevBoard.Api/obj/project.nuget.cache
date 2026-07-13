@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "a90lbvMCXuA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alesa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.9\\microsoft.aspnetcore.openapi.10.0.9.nupkg.sha512",
+    "C:\\Users\\alesa\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
