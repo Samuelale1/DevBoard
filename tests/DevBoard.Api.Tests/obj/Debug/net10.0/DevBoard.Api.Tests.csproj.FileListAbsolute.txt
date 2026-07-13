@@ -112,3 +112,4 @@ C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Te
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.pdb
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.genruntimeconfig.cache
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\ref\DevBoard.Api.Tests.dll
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.sourcelink.json

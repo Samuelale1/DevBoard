@@ -37,3 +37,4 @@ C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net10.0\DevBoard.Api.pdb
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net10.0\DevBoard.Api.genruntimeconfig.cache
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net10.0\ref\DevBoard.Api.dll
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net10.0\DevBoard.Api.sourcelink.json

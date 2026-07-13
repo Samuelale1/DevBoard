@@ -15,3 +15,4 @@ C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Applicat
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\refint\DevBoard.Application.dll
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\DevBoard.Application.pdb
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\ref\DevBoard.Application.dll
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\DevBoard.Application.sourcelink.json
