@@ -1,10 +1,26 @@
-using DevBoard.Domain.Entities;
+namespace DevBoard.Domain.Entities;
+using DevBoard.Domain.Enums;
 
-namespace DevBoard.Domain.Entities
+public sealed class Webhook : BaseEntity
 {
-    public class Webhook: BaseEntity
+    public string TargetUrl { get; private set; }
+
+    public List<WebhookEvent> Events { get; } = [];
+
+    public Guid WorkspaceId { get; private set; }
+
+    private Webhook(
+        string targetUrl,
+        Guid workspaceId)
     {
-       public string url {get; set;}= string.Empty;
-       public string secret {get; set;}= string.Empty;
+        TargetUrl = targetUrl;
+        WorkspaceId = workspaceId;
+    }
+
+    public static Webhook Create(
+        string targetUrl,
+        Guid workspaceId)
+    {
+        return new Webhook(targetUrl, workspaceId);
     }
 }
