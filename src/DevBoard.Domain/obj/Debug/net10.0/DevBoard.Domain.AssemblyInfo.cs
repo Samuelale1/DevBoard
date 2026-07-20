@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DevBoard.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc4bcb4baa3bf25b9a42a1cf5162c55c659e9822")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04936caa33a9f65e50f48943079641c01d033d58")]
 [assembly: System.Reflection.AssemblyProductAttribute("DevBoard.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DevBoard.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
