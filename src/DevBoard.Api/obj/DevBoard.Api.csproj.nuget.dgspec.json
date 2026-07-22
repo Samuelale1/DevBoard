@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj": {}
+    "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj": {
+    "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj",
+        "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj",
         "projectName": "DevBoard.Api",
-        "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj",
+        "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj",
         "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\obj\\",
+        "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj": {
-                "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj"
+              "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj": {
+                "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj"
               }
             }
           }
@@ -59,6 +59,12 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.10, )"
             },
             "Microsoft.OpenApi": {
               "target": "Package",
@@ -502,14 +508,14 @@
         }
       }
     },
-    "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj": {
+    "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
+        "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
         "projectName": "DevBoard.Application",
-        "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
+        "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
         "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\obj\\",
+        "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -531,11 +537,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
-                "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj"
+              "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
+                "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj"
               },
-              "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj"
+              "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj"
               }
             }
           }
@@ -850,14 +856,14 @@
         }
       }
     },
-    "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
+    "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj",
         "projectName": "DevBoard.Domain",
-        "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj",
+        "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj",
         "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\obj\\",
+        "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1191,14 +1197,14 @@
         }
       }
     },
-    "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj": {
+    "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj",
         "projectName": "DevBoard.Infrastructure",
-        "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1220,8 +1226,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
-                "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj"
+              "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
+                "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj"
               }
             }
           }
@@ -1242,6 +1248,24 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

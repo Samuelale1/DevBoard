@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj": {}
+    "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
+    "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj",
         "projectName": "DevBoard.Domain",
-        "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj",
+        "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj",
         "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\obj\\",
+        "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -345,14 +345,14 @@
         }
       }
     },
-    "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj": {
+    "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj",
         "projectName": "DevBoard.Domain.Tests",
-        "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj",
+        "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj",
         "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\obj\\",
+        "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -374,8 +374,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
-                "projectPath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj"
+              "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
+                "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj"
               }
             }
           }

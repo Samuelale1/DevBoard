@@ -11,7 +11,7 @@ namespace DevBoard.Domain.Entities
 
         public string? Description { get; set; }
 
-         public IssueStatus Status { get; set; }
+         public IssueStatus Status { get; private set; }
 
          public IssueType Type { get; private set; }
 
@@ -43,6 +43,7 @@ namespace DevBoard.Domain.Entities
     }
 /* 
 * A factory method to create a new Issue instance with validation.
+* This method ensures that the title, issue key, and project ID are provided and valid before creating a new Issue object.
  */
     public static Issue Create(
     string title,
@@ -88,6 +89,7 @@ namespace DevBoard.Domain.Entities
         }
 
         Status = newStatus;
+        UpdatedAt = DateTime.UtcNow;
     }
 
     }

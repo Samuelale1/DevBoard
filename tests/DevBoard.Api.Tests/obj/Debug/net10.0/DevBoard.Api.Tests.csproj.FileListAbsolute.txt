@@ -113,3 +113,8 @@ C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Te
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.genruntimeconfig.cache
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\ref\DevBoard.Api.Tests.dll
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.sourcelink.json
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Npgsql.dll
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

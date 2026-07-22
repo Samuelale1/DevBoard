@@ -14,3 +14,5 @@ C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Infrastr
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Infrastructure\obj\Debug\net10.0\DevBoard.Infrastructure.pdb
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Infrastructure\obj\Debug\net10.0\ref\DevBoard.Infrastructure.dll
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Infrastructure\obj\Debug\net10.0\DevBoard.Infrastructure.sourcelink.json
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Infrastructure\bin\Debug\net10.0\DevBoard.Infrastructure.runtimeconfig.json
+C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Infrastructure\obj\Debug\net10.0\DevBoard.Infrastructure.genruntimeconfig.cache

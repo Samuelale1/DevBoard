@@ -1,4 +1,4 @@
- 
+ using DevBoard.Domain.Entities;
  namespace DevBoard.Domain.Interfaces;
  
 // Interface That works with any type of entity that inherits from 
@@ -6,7 +6,7 @@
 // the T can be seen as a placeholder for the actual entity type that will be used when implementing the interface.
 // So T is what makes this interface a generic interface, 
 // allowing it to be used with different types of entities that inherit from BaseEntity.
-public interface IRepository <T> where T : class // this is just saying it can only be used with classes, not datatypes like ints,strings,bool
+public interface IRepository <T> : IReadOnlyRepository<T> where T : BaseEntity // this is just saying it can only be used with classes, not datatypes like ints,strings,bool
 {
     // Task juat mean this operation may take a while and will be done asynchronously, 
     // so it will return a Task object that represents the ongoing operation.

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3v/AvhOuEIA=",
+  "dgSpecHash": "/tAbrDrMz4w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alesa\\OneDrive\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj",
+  "projectFilePath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Domain.Tests\\DevBoard.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alesa\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",

@@ -8,7 +8,8 @@ public readonly struct IssuePriority : IComparable<IssuePriority>
     {
         _level = level;
     }
-
+    // Predefined priority levels for issues. 
+    // These static readonly fields represent different levels of priority that can be assigned to an issue.
     public static readonly IssuePriority None   = new(0);
     public static readonly IssuePriority Low    = new(1);
     public static readonly IssuePriority Medium = new(2);
