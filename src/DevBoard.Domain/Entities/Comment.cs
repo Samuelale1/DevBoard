@@ -10,6 +10,10 @@ public sealed class Comment : BaseEntity
 
     public Guid AuthorId { get; private set; }
 
+    private Comment()
+    {
+    }
+
     private Comment(
         string content,
         Guid issueId,

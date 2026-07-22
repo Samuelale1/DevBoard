@@ -10,3 +10,15 @@ C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\o
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.pdb
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\ref\DevBoard.Domain.dll
 C:\Users\alesa\OneDrive\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.sourcelink.json
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\bin\Debug\net10.0\DevBoard.Domain.deps.json
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\bin\Debug\net10.0\DevBoard.Domain.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\bin\Debug\net10.0\DevBoard.Domain.pdb
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.AssemblyInfoInputs.cache
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.AssemblyInfo.cs
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.csproj.CoreCompileInputs.cache
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.sourcelink.json
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\refint\DevBoard.Domain.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.pdb
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\ref\DevBoard.Domain.dll

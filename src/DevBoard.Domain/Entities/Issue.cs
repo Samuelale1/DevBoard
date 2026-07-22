@@ -26,6 +26,10 @@ namespace DevBoard.Domain.Entities
         public List<Label> Labels { get; } = [];
         // TO DO: public List<IssueHistory> History { get; } = [];
 
+        private Issue()
+        {
+            
+        }
          private Issue
          (
             string title, string? description, IssueType type, IssuePriority priority, string issueKey,Guid projectId

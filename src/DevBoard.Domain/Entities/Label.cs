@@ -10,6 +10,9 @@ public sealed class Label : BaseEntity
 
     public Guid WorkspaceId { get; private set; }
 
+    private Label()
+    {
+    }
     private Label(
         string name,
         string color,

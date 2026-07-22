@@ -13,6 +13,10 @@ public sealed class Project : BaseEntity
 
     public int IssueCounter { get; private set; }
 
+
+    private Project()
+    {
+    }
     private Project(
         string name,
         Slug slug,

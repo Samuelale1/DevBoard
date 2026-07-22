@@ -3,6 +3,7 @@ namespace DevBoard.Domain.ValueObjects;
 public readonly struct IssuePriority : IComparable<IssuePriority>
 {
     private readonly int _level;
+    public int Level => _level;
 
     private IssuePriority(int level)
     {
@@ -15,6 +16,20 @@ public readonly struct IssuePriority : IComparable<IssuePriority>
     public static readonly IssuePriority Medium = new(2);
     public static readonly IssuePriority High   = new(3);
     public static readonly IssuePriority Urgent = new(4);
+
+     public static IssuePriority From(int level)
+    {
+        return level switch
+        {
+            0 => None,
+            1 => Low,
+            2 => Medium,
+            3 => High,
+            4 => Urgent,
+            _ => throw new ArgumentOutOfRangeException(nameof(level),
+                    $"Invalid priority level: {level}")
+        };
+    }
 
     public int CompareTo(IssuePriority other)
         => _level.CompareTo(other._level);
@@ -40,4 +55,6 @@ public readonly struct IssuePriority : IComparable<IssuePriority>
         4 => "Urgent",
         _ => "Unknown"
     };
+
+   
 }

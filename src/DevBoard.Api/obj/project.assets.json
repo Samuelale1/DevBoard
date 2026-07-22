@@ -2254,6 +2254,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "DevBoard.Application >= 1.0.0",
+      "DevBoard.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.10",
       "Microsoft.OpenApi >= 2.7.5"
@@ -2294,6 +2295,9 @@
           "projectReferences": {
             "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj": {
               "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj"
+            },
+            "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj"
             }
           }
         }

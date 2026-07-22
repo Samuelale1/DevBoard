@@ -1,4 +1,5 @@
 using DevBoard.Domain.Entities;
+using DevBoard.Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -20,6 +21,11 @@ public sealed class IssueConfiguration : IEntityTypeConfiguration<Issue>
         builder.Property(i => i.IssueKey)
                .IsRequired()
                .HasMaxLength(20);
+
+       builder.Property(i => i.Priority)
+    .HasConversion(priority => priority.Level, // Convert IssuePriority to int for storage
+        value => IssuePriority.From(value))
+    .IsRequired();
 
         builder.Property(i => i.Status)
                .IsRequired();

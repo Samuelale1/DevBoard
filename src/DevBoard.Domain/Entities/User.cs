@@ -16,6 +16,10 @@ public sealed class User : BaseEntity
 
     public Guid WorkspaceId { get; private set; }
 
+
+    private User()
+    {
+    }
     private User(
         Email email,
         string displayName,

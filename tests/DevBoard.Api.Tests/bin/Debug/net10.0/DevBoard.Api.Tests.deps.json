@@ -404,6 +404,7 @@
       "DevBoard.Api/1.0.0": {
         "dependencies": {
           "DevBoard.Application": "1.0.0",
+          "DevBoard.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "10.0.9",
           "Microsoft.OpenApi": "2.7.5"
         },

@@ -9,6 +9,10 @@ public sealed class Webhook : BaseEntity
 
     public Guid WorkspaceId { get; private set; }
 
+
+    private Webhook()
+    {
+    }
     private Webhook(
         string targetUrl,
         Guid workspaceId)

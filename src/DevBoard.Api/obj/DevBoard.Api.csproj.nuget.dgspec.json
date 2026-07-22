@@ -35,6 +35,9 @@
             "projectReferences": {
               "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj": {
                 "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj"
+              },
+              "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj"
               }
             }
           }
