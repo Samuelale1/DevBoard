@@ -3,7 +3,7 @@ using DevBoard.Domain.Enums;
 
 public sealed class Webhook : BaseEntity
 {
-    public string TargetUrl { get; private set; }
+    public string? TargetUrl { get; private set; }
 
     public List<WebhookEvent> Events { get; } = [];
 

@@ -4,9 +4,9 @@ using DevBoard.Domain.Exceptions;
 
 public sealed class Label : BaseEntity
 {
-    public string Name { get; private set; }
+    public string? Name { get; private set; }
 
-    public string Color { get; private set; }
+    public string? Color { get; private set; }
 
     public Guid WorkspaceId { get; private set; }
 

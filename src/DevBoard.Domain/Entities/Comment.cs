@@ -4,7 +4,7 @@ using DevBoard.Domain.Exceptions;
 
 public sealed class Comment : BaseEntity
 {
-    public string Content { get; private set; }
+    public string? Content { get; private set; }
 
     public Guid IssueId { get; private set; }
 

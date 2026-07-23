@@ -1,4 +1,5 @@
  using DevBoard.Domain.Entities;
+ using System.Linq.Expressions;
  namespace DevBoard.Domain.Interfaces;
  
 // Interface That works with any type of entity that inherits from 
@@ -8,17 +9,21 @@
 // allowing it to be used with different types of entities that inherit from BaseEntity.
 public interface IRepository <T> : IReadOnlyRepository<T> where T : BaseEntity // this is just saying it can only be used with classes, not datatypes like ints,strings,bool
 {
-    // Task juat mean this operation may take a while and will be done asynchronously, 
+    // Task just means this operation may take a while and will be done asynchronously, 
     // so it will return a Task object that represents the ongoing operation.
     // the question mark after T indicates that the method may return a null value if no entity with the specified ID is found. 
-    Task<T?> GetByIdAsync(Guid id);
+    // Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
+
+    // IQueryable<T> Query();
 
 // The GetAllAsync method retrieves all entities of type T from the repository asynchronously.
-    Task<IEnumerable<T>> GetAllAsync();
-    Task AddAsync(T entity);
+    //Task<IEnumerable<T>> GetAllAsync();
+    Task AddAsync(T entity, CancellationToken cancellationToken = default);
 
-    Task UpdateAsync(T entity);
+    void Update(T entity);
 
-    Task DeleteAsync(Guid id);
+    void Delete(T entity);
+
+    Task SaveChangesAsync(CancellationToken cancellationToken = default);
 
 }

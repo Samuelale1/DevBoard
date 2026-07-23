@@ -7,7 +7,7 @@ namespace DevBoard.Domain.Entities
 {
     public sealed class Issue: BaseEntity
     {
-       public  string Title { get; private set; }
+       public  string? Title { get; private set; }
 
         public string? Description { get; set; }
 
