@@ -1,6 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-
-namespace DevBoard.Infrastructure.Common;
+namespace DevBoard.Shared.Common;
 
 public sealed class PagedList<T>
 {
@@ -18,7 +16,7 @@ public sealed class PagedList<T>
 
     public bool HasNextPage => CurrentPage < TotalPages;
 
-    private PagedList(
+    public PagedList(
         IReadOnlyList<T> items,
         int totalCount,
         int currentPage,
@@ -31,25 +29,5 @@ public sealed class PagedList<T>
 
         TotalPages = (int)Math.Ceiling(
             totalCount / (double)pageSize);
-    }
-
-    public static async Task<PagedList<T>> CreateAsync(
-        IQueryable<T> query,
-        int page,
-        int size,
-        CancellationToken ct = default)
-    {
-        var count = await query.CountAsync(ct);
-
-        var items = await query
-            .Skip((page - 1) * size)
-            .Take(size)
-            .ToListAsync(ct);
-
-        return new PagedList<T>(
-            items,
-            count,
-            page,
-            size);
     }
 }

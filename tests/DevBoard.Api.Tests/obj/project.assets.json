@@ -716,7 +716,8 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "DevBoard.Domain": "1.0.0",
-          "DevBoard.Infrastructure": "1.0.0"
+          "DevBoard.Infrastructure": "1.0.0",
+          "DevBoard.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DevBoard.Application.dll": {}
@@ -740,6 +741,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "DevBoard.Domain": "1.0.0",
+          "DevBoard.Shared": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.2"
         },
         "compile": {
@@ -747,6 +749,16 @@
         },
         "runtime": {
           "bin/placeholder/DevBoard.Infrastructure.dll": {}
+        }
+      },
+      "DevBoard.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/DevBoard.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevBoard.Shared.dll": {}
         }
       }
     }
@@ -1735,6 +1747,11 @@
       "type": "project",
       "path": "../../src/DevBoard.Infrastructure/DevBoard.Infrastructure.csproj",
       "msbuildProject": "../../src/DevBoard.Infrastructure/DevBoard.Infrastructure.csproj"
+    },
+    "DevBoard.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../src/DevBoard.Shared/DevBoard.Shared.csproj",
+      "msbuildProject": "../../src/DevBoard.Shared/DevBoard.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

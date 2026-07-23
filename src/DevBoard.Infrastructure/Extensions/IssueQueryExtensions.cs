@@ -1,6 +1,7 @@
 using DevBoard.Domain.Entities;
 using DevBoard.Domain.Enums;
-using DevBoard.Infrastructure.Common;
+using DevBoard.Infrastructure.Extensions;
+using DevBoard.Shared.Common;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -67,12 +68,8 @@ public static class IssueQueryExtensions
     int size,
     CancellationToken ct = default)
         {
-            return PagedList<Issue>.CreateAsync(
-                query,
-                page,
-                size,
-                ct);
-        }   
+            return query.ToPagedListAsync(page, size, ct);
+        }
 
 
 
