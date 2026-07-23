@@ -238,3 +238,5 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\D
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.genruntimeconfig.cache
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\ref\DevBoard.Api.Tests.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\DevBoard.Shared.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\DevBoard.Shared.pdb

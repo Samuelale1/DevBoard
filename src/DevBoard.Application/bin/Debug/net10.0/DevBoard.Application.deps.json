@@ -9,7 +9,8 @@
       "DevBoard.Application/1.0.0": {
         "dependencies": {
           "DevBoard.Domain": "1.0.0",
-          "DevBoard.Infrastructure": "1.0.0"
+          "DevBoard.Infrastructure": "1.0.0",
+          "DevBoard.Shared": "1.0.0"
         },
         "runtime": {
           "DevBoard.Application.dll": {}
@@ -185,10 +186,19 @@
       "DevBoard.Infrastructure/1.0.0": {
         "dependencies": {
           "DevBoard.Domain": "1.0.0",
+          "DevBoard.Shared": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.2"
         },
         "runtime": {
           "DevBoard.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DevBoard.Shared/1.0.0": {
+        "runtime": {
+          "DevBoard.Shared.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -306,6 +316,11 @@
       "sha512": ""
     },
     "DevBoard.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevBoard.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

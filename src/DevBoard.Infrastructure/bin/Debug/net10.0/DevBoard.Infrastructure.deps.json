@@ -9,6 +9,7 @@
       "DevBoard.Infrastructure/1.0.0": {
         "dependencies": {
           "DevBoard.Domain": "1.0.0",
+          "DevBoard.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "10.0.10",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.2"
         },
@@ -600,6 +601,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "DevBoard.Shared/1.0.0": {
+        "runtime": {
+          "DevBoard.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -841,6 +850,11 @@
       "hashPath": "system.composition.typedparts.9.0.0.nupkg.sha512"
     },
     "DevBoard.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevBoard.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
