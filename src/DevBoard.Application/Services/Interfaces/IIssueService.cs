@@ -1,4 +1,5 @@
 using DevBoard.Domain.Entities;
+using DevBoard.Domain.ValueObjects;
 using DevBoard.Domain.Enums;
 using DevBoard.Shared.Common;
 
@@ -32,9 +33,11 @@ public interface IIssueService
         int pageSize,
         CancellationToken ct = default);
 
+    // src/DevBoard.Application/Services/Interfaces/IIssueService.cs — replace CreateAsync signature
     Task<Issue> CreateAsync(
-        Issue issue,
-        CancellationToken ct = default);
+    Guid projectId, string title, string? description,
+    IssueType type, IssuePriority priority,
+    CancellationToken ct = default);
 
     Task ChangeStatusAsync(
         Guid issueId,
