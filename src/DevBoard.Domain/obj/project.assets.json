@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "DevBoard.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/DevBoard.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevBoard.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DevBoard.Shared/1.0.0": {
+      "type": "project",
+      "path": "../DevBoard.Shared/DevBoard.Shared.csproj",
+      "msbuildProject": "../DevBoard.Shared/DevBoard.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "DevBoard.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\alesa\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Shared\\DevBoard.Shared.csproj": {
+              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Shared\\DevBoard.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

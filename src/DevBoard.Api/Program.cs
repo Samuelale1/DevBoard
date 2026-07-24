@@ -5,7 +5,11 @@ using DevBoard.Domain.Interfaces;
 using DevBoard.Infrastructure.Persistence;
 using DevBoard.Infrastructure.Repositories;
 using DevBoard.Application.Options;
+using DevBoard.Api.Validators;
+using FluentValidation;
+using DevBoard.Api.Middleware;
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,20 +19,28 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 builder.Services.AddScoped<IIssueService, IssueService>();
 builder.Services.AddScoped<IProjectService, ProjectService>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateIssueRequestValidator>();
+
 
 builder.Services.AddOpenApi();
 
-builder.Services.AddOptions<SmtpOptions>().BindConfiguration("Smtp").ValidateDataAnnotations().ValidateOnStart();
-builder.Services.AddOptions<FeatureFlagOptions>().BindConfiguration("FeatureFlags");
+builder.Services.AddOptions<SmtpOptions>()
+    .BindConfiguration("Smtp")
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
+
+builder.Services.AddOptions<FeatureFlagOptions>()
+    .BindConfiguration("FeatureFlags");
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();
 }
 
-app.UseExceptionHandler(builder =>
+/* app.UseExceptionHandler(builder =>
 {
     builder.Run(async context =>
     {
@@ -42,7 +54,9 @@ app.UseExceptionHandler(builder =>
         context.Response.ContentType = "application/json";
         await context.Response.WriteAsJsonAsync(new { error = message });
     });
-});
+}); */
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 

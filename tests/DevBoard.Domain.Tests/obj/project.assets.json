@@ -397,11 +397,24 @@
       "DevBoard.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "DevBoard.Shared": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DevBoard.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/DevBoard.Domain.dll": {}
+        }
+      },
+      "DevBoard.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/DevBoard.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevBoard.Shared.dll": {}
         }
       }
     }
@@ -918,6 +931,11 @@
       "type": "project",
       "path": "../../src/DevBoard.Domain/DevBoard.Domain.csproj",
       "msbuildProject": "../../src/DevBoard.Domain/DevBoard.Domain.csproj"
+    },
+    "DevBoard.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../src/DevBoard.Shared/DevBoard.Shared.csproj",
+      "msbuildProject": "../../src/DevBoard.Shared/DevBoard.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

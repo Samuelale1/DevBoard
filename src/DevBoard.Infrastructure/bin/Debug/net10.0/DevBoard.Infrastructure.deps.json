@@ -595,6 +595,9 @@
         }
       },
       "DevBoard.Domain/1.0.0": {
+        "dependencies": {
+          "DevBoard.Shared": "1.0.0"
+        },
         "runtime": {
           "DevBoard.Domain.dll": {
             "assemblyVersion": "1.0.0.0",

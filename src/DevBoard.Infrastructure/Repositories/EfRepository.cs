@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DevBoard.Infrastructure.Repositories;
 
-public sealed class EfRepository<T> : IRepository<T>
+public  sealed class EfRepository<T> : IRepository<T>
     where T : BaseEntity
 {
     protected readonly AppDbContext _context;

@@ -22,3 +22,7 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\refint\DevBoard.Domain.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\ref\DevBoard.Domain.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\bin\Debug\net10.0\DevBoard.Shared.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\bin\Debug\net10.0\DevBoard.Shared.pdb
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.Domain.csproj.AssemblyReference.cache
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Domain\obj\Debug\net10.0\DevBoard.34724E2E.Up2Date

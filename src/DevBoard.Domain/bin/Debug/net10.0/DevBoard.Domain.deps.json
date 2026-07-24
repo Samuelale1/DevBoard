@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "DevBoard.Domain/1.0.0": {
+        "dependencies": {
+          "DevBoard.Shared": "1.0.0"
+        },
         "runtime": {
           "DevBoard.Domain.dll": {}
+        }
+      },
+      "DevBoard.Shared/1.0.0": {
+        "runtime": {
+          "DevBoard.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "DevBoard.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevBoard.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

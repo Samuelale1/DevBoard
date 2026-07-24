@@ -258,3 +258,6 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net10.0\ref\DevBoard.Api.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\DevBoard.Shared.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\DevBoard.Shared.pdb
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Scalar.AspNetCore.dll

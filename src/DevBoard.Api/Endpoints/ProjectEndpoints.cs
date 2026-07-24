@@ -3,6 +3,7 @@ using DevBoard.Api.Contracts;
 using DevBoard.Application.Services.Interfaces;
 using DevBoard.Domain.Entities;
 using DevBoard.Domain.ValueObjects;
+using DevBoard.Api.Validators;
 
 namespace DevBoard.Api.Endpoints;
 
@@ -11,7 +12,7 @@ public static class ProjectEndpoints
     public static RouteGroupBuilder MapProjects(this RouteGroupBuilder group)
     {
         group.MapGet("/", GetAll).WithName("GetProjects");
-        group.MapPost("/", Create).WithName("CreateProject");
+        group.MapPost("/", Create).WithName("CreateProject").AddEndpointFilter<ValidationFilter<CreateProjectRequest>>();
         return group;
     }
 

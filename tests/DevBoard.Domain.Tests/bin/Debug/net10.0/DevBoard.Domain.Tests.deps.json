@@ -332,8 +332,19 @@
         }
       },
       "DevBoard.Domain/1.0.0": {
+        "dependencies": {
+          "DevBoard.Shared": "1.0.0"
+        },
         "runtime": {
           "DevBoard.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DevBoard.Shared/1.0.0": {
+        "runtime": {
+          "DevBoard.Shared.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -425,6 +436,11 @@
       "hashPath": "xunit.extensibility.execution.2.9.3.nupkg.sha512"
     },
     "DevBoard.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevBoard.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
