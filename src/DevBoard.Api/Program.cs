@@ -4,6 +4,7 @@ using DevBoard.Application.Services.Interfaces;
 using DevBoard.Domain.Interfaces;
 using DevBoard.Infrastructure.Persistence;
 using DevBoard.Infrastructure.Repositories;
+using DevBoard.Application.Options;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,9 @@ builder.Services.AddScoped<IIssueService, IssueService>();
 builder.Services.AddScoped<IProjectService, ProjectService>();
 
 builder.Services.AddOpenApi();
+
+builder.Services.AddOptions<SmtpOptions>().BindConfiguration("Smtp").ValidateDataAnnotations().ValidateOnStart();
+builder.Services.AddOptions<FeatureFlagOptions>().BindConfiguration("FeatureFlags");
 
 var app = builder.Build();
 
