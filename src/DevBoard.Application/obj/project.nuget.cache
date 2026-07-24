@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xjJL1Hson8A=",
+  "dgSpecHash": "VUwJnZt9JW8=",
   "success": true,
   "projectFilePath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\alesa\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.4\\microsoft.entityframeworkcore.10.0.4.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.4\\microsoft.entityframeworkcore.abstractions.10.0.4.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.4\\microsoft.entityframeworkcore.analyzers.10.0.4.nupkg.sha512",
