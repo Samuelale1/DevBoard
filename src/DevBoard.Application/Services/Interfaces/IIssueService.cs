@@ -15,9 +15,12 @@ It provides methods for retrieving issues by their id,
  */
 public interface IIssueService
 {
+
     Task<Issue?> GetByIdAsync(
         Guid id,
         CancellationToken ct = default);
+
+    
 
     Task<Issue?> GetByKeyAsync(
         string key,
@@ -37,4 +40,7 @@ public interface IIssueService
         Guid issueId,
         IssueStatus status,
         CancellationToken ct = default);
+
+
+    
 }

@@ -18,6 +18,8 @@ public interface IRepository <T> : IReadOnlyRepository<T> where T : BaseEntity /
 
 // The GetAllAsync method retrieves all entities of type T from the repository asynchronously.
     //Task<IEnumerable<T>> GetAllAsync();
+
+    // Task<T> GetAllAsync(CancellationToken ct= default);
     Task AddAsync(T entity, CancellationToken cancellationToken = default);
 
     void Update(T entity);

@@ -1,6 +1,5 @@
 using DevBoard.Domain.Entities;
 using DevBoard.Domain.Enums;
-using DevBoard.Infrastructure.Extensions;
 using DevBoard.Shared.Common;
 using Microsoft.EntityFrameworkCore;
 

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DevBoard.Infrastructure.Repositories;
 
-public class EfRepository<T> : IRepository<T>
+public sealed class EfRepository<T> : IRepository<T>
     where T : BaseEntity
 {
     protected readonly AppDbContext _context;
@@ -26,7 +26,7 @@ public class EfRepository<T> : IRepository<T>
 
     public IQueryable<T> Query()
     {
-        return _dbSet.AsQueryable();
+        return _dbSet.AsNoTracking();
     }
 
     public async Task AddAsync(
