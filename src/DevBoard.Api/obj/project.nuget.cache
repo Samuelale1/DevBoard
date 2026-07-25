@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GvkHqigigYw=",
+  "dgSpecHash": "cGrgNmGU+6o=",
   "success": true,
   "projectFilePath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\alesa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.10\\microsoft.aspnetcore.authentication.jwtbearer.10.0.10.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.9\\microsoft.aspnetcore.openapi.10.0.9.nupkg.sha512",
+    "C:\\Users\\alesa\\.nuget\\packages\\microsoft.aspnetcore.signalr\\1.2.11\\microsoft.aspnetcore.signalr.1.2.11.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.bcl.cryptography\\10.0.2\\microsoft.bcl.cryptography.10.0.2.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.11.0\\microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512",
@@ -46,5 +47,18 @@
     "C:\\Users\\alesa\\.nuget\\packages\\system.composition.typedparts\\9.0.0\\system.composition.typedparts.9.0.0.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.21.0\\system.identitymodel.tokens.jwt.8.21.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.AspNetCore.SignalR will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj",
+      "libraryId": "Microsoft.AspNetCore.SignalR",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

@@ -13,7 +13,7 @@ using Scalar.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using DevBoard.Application.Options;
+using DevBoard.Infrastructure.Hubs;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +39,10 @@ builder.Services.AddOptions<FeatureFlagOptions>()
 
 builder.Services.AddOptions<JwtOptions>().BindConfiguration("Jwt").ValidateDataAnnotations().ValidateOnStart();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddSignalR();
+builder.Services.AddAuthorization();
+
+
 
 
 var app = builder.Build();
@@ -63,7 +67,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSection["Secret"]!))
         };
     });
-builder.Services.AddAuthorization();
 
 
 /* app.UseExceptionHandler(builder =>
@@ -81,6 +84,7 @@ builder.Services.AddAuthorization();
         await context.Response.WriteAsJsonAsync(new { error = message });
     });
 }); */
+app.MapHub<BoardHub>("/hubs/board");
 app.UseAuthentication();
 app.UseAuthorization();
 

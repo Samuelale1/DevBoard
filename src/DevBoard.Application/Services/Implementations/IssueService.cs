@@ -9,6 +9,8 @@ using DevBoard.Shared.Common;
 using DevBoard.Infrastructure.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using DevBoard.Infrastructure.Hubs;
+using Microsoft.AspNetCore.SignalR;
 
 namespace DevBoard.Application.Services.Implementations;
 
@@ -18,11 +20,15 @@ public sealed class IssueService : IIssueService
     private readonly IRepository<Issue> _issueRepository;
     private readonly IRepository<Project> _projectRepository;
     private readonly ILogger<IssueService> _logger;
-    public IssueService(IRepository<Issue> issueRepository, IRepository<Project> projectRepository, ILogger<IssueService> logger)
+
+    private readonly IHubContext<BoardHub> _hub;
+
+    public IssueService(IRepository<Issue> issueRepository, IRepository<Project> projectRepository, ILogger<IssueService> logger, IHubContext<BoardHub> hub)
     {
         _issueRepository = issueRepository;
         _projectRepository = projectRepository;
         _logger = logger;
+        _hub =hub;
     }
 
     public Task<Issue?> GetByIdAsync(Guid id, CancellationToken ct = default)
@@ -73,5 +79,9 @@ public sealed class IssueService : IIssueService
         issue.TransitionTo(status);
         _issueRepository.Update(issue);
         await _issueRepository.SaveChangesAsync(ct);
+
+         await _hub.Clients
+            .Group($"project:{issue.ProjectId}")
+            .SendAsync("IssueUpdated", new { issue.Id, issue.Status }, ct);
     }
 }

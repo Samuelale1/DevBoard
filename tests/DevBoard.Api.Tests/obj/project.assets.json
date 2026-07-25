@@ -954,6 +954,7 @@
         "dependencies": {
           "DevBoard.Domain": "1.0.0",
           "DevBoard.Shared": "1.0.0",
+          "Microsoft.AspNetCore.SignalR": "1.2.11",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.2"
         },
         "compile": {
