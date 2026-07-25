@@ -23,6 +23,7 @@ public sealed class AppDbContext
     public DbSet<Label> Labels => Set<Label>();
 
     public DbSet<Webhook> Webhooks => Set<Webhook>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
     protected override void OnModelCreating(
         ModelBuilder modelBuilder)

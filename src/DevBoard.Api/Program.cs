@@ -10,6 +10,11 @@ using FluentValidation;
 using DevBoard.Api.Middleware;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using DevBoard.Application.Options;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +37,10 @@ builder.Services.AddOptions<SmtpOptions>()
 builder.Services.AddOptions<FeatureFlagOptions>()
     .BindConfiguration("FeatureFlags");
 
+builder.Services.AddOptions<JwtOptions>().BindConfiguration("Jwt").ValidateDataAnnotations().ValidateOnStart();
+builder.Services.AddScoped<IAuthService, AuthService>();
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -39,6 +48,23 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
     app.MapScalarApiReference();
 }
+var jwtSection = builder.Configuration.GetSection("Jwt");
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtSection["Issuer"],
+            ValidAudience = jwtSection["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSection["Secret"]!))
+        };
+    });
+builder.Services.AddAuthorization();
+
 
 /* app.UseExceptionHandler(builder =>
 {
@@ -55,6 +81,12 @@ if (app.Environment.IsDevelopment())
         await context.Response.WriteAsJsonAsync(new { error = message });
     });
 }); */
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapGroup("/api/auth").MapAuth();
+app.MapGroup("/api/projects").RequireAuthorization().MapProjects();
+app.MapGroup("/api/issues").RequireAuthorization().MapIssues();
 
 app.UseMiddleware<ExceptionMiddleware>();
 
