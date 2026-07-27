@@ -157,3 +157,8 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tes
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.genruntimeconfig.cache
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\ref\DevBoard.Application.Tests.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\Microsoft.Extensions.Http.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

@@ -253,3 +253,16 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\D
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Http.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Logging.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll

@@ -14,6 +14,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using DevBoard.Infrastructure.Hubs;
+using Microsoft.Extensions.Http;
+using DevBoard.Infrastructure.BackgroundServices;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +28,13 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 builder.Services.AddScoped<IIssueService, IssueService>();
 builder.Services.AddScoped<IProjectService, ProjectService>();
 builder.Services.AddValidatorsFromAssemblyContaining<CreateIssueRequestValidator>();
+builder.Services.AddHttpClient("webhook", c => c.Timeout = TimeSpan.FromSeconds(10));
+builder.Services.AddScoped<IDailyDigestService, DailyDigestService>();
+
+builder.Services.AddSingleton<WebhookChannel>();
+builder.Services.AddHostedService<WebhookDeliveryWorker>();
+builder.Services.AddHostedService<StaleIssueCloserWorker>();
+builder.Services.AddHostedService<DailyDigestWorker>();
 
 
 builder.Services.AddOpenApi();
