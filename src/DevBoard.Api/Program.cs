@@ -84,6 +84,8 @@ if (app.Environment.IsDevelopment())
         var (statusCode, message) = ex switch
         {
             DevBoardException dbEx => (dbEx.StatusCode, dbEx.Message),
+            System.Text.Json.JsonException => (400, "The request body is malformed or contains invalid values."),
+            BadHttpRequestException => (400, "The request body is malformed or contains invalid values."),
             _ => (500, "An unexpected error occurred.")
         };
         context.Response.StatusCode = statusCode;
