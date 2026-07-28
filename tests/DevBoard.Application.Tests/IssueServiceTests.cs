@@ -16,6 +16,7 @@ public sealed class IssueServiceTests
 {
     private readonly Mock<IRepository<Issue>> _issueRepo = new();
     private readonly Mock<IRepository<Project>> _projectRepo = new();
+    private readonly Mock<IRepository<AuditLogEntry>> _auditLogRepo = new();
     private readonly Mock<ILogger<IssueService>> _logger = new();
     private readonly Mock<IHubContext<BoardHub>> _hub = new();
     private readonly Mock<IClientProxy> _clientProxy = new();
@@ -26,7 +27,7 @@ public sealed class IssueServiceTests
         clients.Setup(c => c.Group(It.IsAny<string>())).Returns(_clientProxy.Object);
         _hub.Setup(h => h.Clients).Returns(clients.Object);
 
-        return new IssueService(_issueRepo.Object, _projectRepo.Object, _logger.Object, _hub.Object);
+        return new IssueService(_issueRepo.Object, _projectRepo.Object, _auditLogRepo.Object, _logger.Object, _hub.Object);
     }
 
     [Fact]

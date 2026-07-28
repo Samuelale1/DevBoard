@@ -16,6 +16,9 @@ using System.Text;
 using DevBoard.Infrastructure.Hubs;
 using Microsoft.Extensions.Http;
 using DevBoard.Infrastructure.BackgroundServices;
+using Npgsql.Replication.TestDecoding;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using DevBoard.Domain.Exceptions;
 
 
 
@@ -27,41 +30,19 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 builder.Services.AddScoped<IIssueService, IssueService>();
 builder.Services.AddScoped<IProjectService, ProjectService>();
-builder.Services.AddValidatorsFromAssemblyContaining<CreateIssueRequestValidator>();
-builder.Services.AddHttpClient("webhook", c => c.Timeout = TimeSpan.FromSeconds(10));
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IDailyDigestService, DailyDigestService>();
-
+builder.Services.AddSignalR();
 builder.Services.AddSingleton<WebhookChannel>();
 builder.Services.AddHostedService<WebhookDeliveryWorker>();
 builder.Services.AddHostedService<StaleIssueCloserWorker>();
 builder.Services.AddHostedService<DailyDigestWorker>();
-
-
-builder.Services.AddOpenApi();
-
-builder.Services.AddOptions<SmtpOptions>()
-    .BindConfiguration("Smtp")
-    .ValidateDataAnnotations()
-    .ValidateOnStart();
-
-builder.Services.AddOptions<FeatureFlagOptions>()
-    .BindConfiguration("FeatureFlags");
-
+builder.Services.AddOptions<SmtpOptions>().BindConfiguration("Smtp").ValidateDataAnnotations().ValidateOnStart();
+builder.Services.AddOptions<FeatureFlagOptions>().BindConfiguration("FeatureFlags");
 builder.Services.AddOptions<JwtOptions>().BindConfiguration("Jwt").ValidateDataAnnotations().ValidateOnStart();
-builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddSignalR();
-builder.Services.AddAuthorization();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateIssueRequestValidator>();
+builder.Services.AddHttpClient("webhook", c => c.Timeout = TimeSpan.FromSeconds(10));
 
-
-
-
-var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-    app.MapScalarApiReference();
-}
 var jwtSection = builder.Configuration.GetSection("Jwt");
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -78,23 +59,40 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+builder.Services.AddAuthorization();
+builder.Services.AddAuthentication();
+builder.Services.AddHealthChecks()
+    .AddDbContextCheck<AppDbContext>("database");
 
-/* app.UseExceptionHandler(builder =>
+builder.Services.AddOpenApi();
+
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
 {
-    builder.Run(async context =>
+    app.MapOpenApi();
+    app.MapScalarApiReference();
+}
+
+
+ app.UseExceptionHandler(errbuilder =>
+{
+    errbuilder.Run(async context =>
     {
         var ex = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>()?.Error;
         var (statusCode, message) = ex switch
         {
-            DevBoard.Domain.Exceptions.DevBoardException dbEx => (dbEx.StatusCode, dbEx.Message),
+            DevBoardException dbEx => (dbEx.StatusCode, dbEx.Message),
             _ => (500, "An unexpected error occurred.")
         };
         context.Response.StatusCode = statusCode;
         context.Response.ContentType = "application/json";
         await context.Response.WriteAsJsonAsync(new { error = message });
     });
-}); */
-app.MapHub<BoardHub>("/hubs/board");
+}); 
+
+app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -102,11 +100,13 @@ app.MapGroup("/api/auth").MapAuth();
 app.MapGroup("/api/projects").RequireAuthorization().MapProjects();
 app.MapGroup("/api/issues").RequireAuthorization().MapIssues();
 
+app.MapHub<BoardHub>("/hubs/board");
+
+
+app.MapHealthChecks("/health");
+
 app.UseMiddleware<ExceptionMiddleware>();
 
-app.UseHttpsRedirection();
-
-app.MapGroup("/api/projects").MapProjects();
-app.MapGroup("/api/issues").MapIssues();
 
 app.Run();
+public partial class Program { }

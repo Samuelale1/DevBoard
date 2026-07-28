@@ -4,7 +4,7 @@ using DevBoard.Domain.Enums;
 
 public sealed class InvalidIssueTransitionException : DevBoardException
 {
-    public override int StatusCode => 409;
+    public override int StatusCode => 422;
 
     public InvalidIssueTransitionException(
         IssueStatus from,
