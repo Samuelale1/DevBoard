@@ -12,6 +12,8 @@ public sealed class AppDbContext
     {
     }
 
+    public DbSet<AuditLogEntry> AuditLogEntries => Set<AuditLogEntry>();
+    
     public DbSet<Issue> Issues => Set<Issue>();
 
     public DbSet<User> Users => Set<User>();

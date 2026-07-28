@@ -21,8 +21,10 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\D
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Application.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Domain.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Infrastructure.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Shared.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Domain.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Infrastructure.pdb
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Shared.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\DevBoard.Application.csproj.AssemblyReference.cache
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\DevBoard.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\DevBoard.Application.AssemblyInfoInputs.cache
@@ -34,5 +36,3 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\D
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\refint\DevBoard.Application.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\DevBoard.Application.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\obj\Debug\net10.0\ref\DevBoard.Application.dll
-C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Shared.dll
-C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Application\bin\Debug\net10.0\DevBoard.Shared.pdb

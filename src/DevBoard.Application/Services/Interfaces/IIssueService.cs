@@ -2,6 +2,7 @@ using DevBoard.Domain.Entities;
 using DevBoard.Domain.ValueObjects;
 using DevBoard.Domain.Enums;
 using DevBoard.Shared.Common;
+using DevBoard.Application.Import;
 
 namespace DevBoard.Application.Services.Interfaces;
 /* 
@@ -16,11 +17,10 @@ It provides methods for retrieving issues by their id,
  */
 public interface IIssueService
 {
-
+    IAsyncEnumerable<AuditLogEntry> StreamAuditLogAsync(Guid issueId, CancellationToken ct = default);
     Task<Issue?> GetByIdAsync(
         Guid id,
         CancellationToken ct = default);
-
     
 
     Task<Issue?> GetByKeyAsync(
@@ -33,7 +33,7 @@ public interface IIssueService
         int pageSize,
         CancellationToken ct = default);
 
-    // src/DevBoard.Application/Services/Interfaces/IIssueService.cs — replace CreateAsync signature
+    
     Task<Issue> CreateAsync(
     Guid projectId, string title, string? description,
     IssueType type, IssuePriority priority,
@@ -44,6 +44,11 @@ public interface IIssueService
         IssueStatus status,
         CancellationToken ct = default);
 
+    Task<int> ImportCsvAsync(
+        Guid projectId, 
+        Stream csvStream, 
+        CancellationToken ct = default);
+    
 
     
 }
