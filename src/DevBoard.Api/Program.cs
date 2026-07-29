@@ -67,6 +67,8 @@ builder.Services.AddHealthChecks()
 builder.Services.AddOpenApi();
 
 
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -74,6 +76,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
     app.MapScalarApiReference();
 }
+
 
 
  app.UseExceptionHandler(errbuilder =>
@@ -93,6 +96,10 @@ if (app.Environment.IsDevelopment())
         await context.Response.WriteAsJsonAsync(new { error = message });
     });
 }); 
+// Auto Migrate to Db
+using var scope = app.Services.CreateScope();
+var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+await db.Database.MigrateAsync();
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
