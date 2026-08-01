@@ -229,6 +229,7 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\D
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Features.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.FileProviders.Composite.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Http.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Identity.Core.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
@@ -567,4 +568,3 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\D
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\DevBoard.Api.Tests.genruntimeconfig.cache
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\obj\Debug\net10.0\ref\DevBoard.Api.Tests.dll
-C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Api.Tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Http.dll

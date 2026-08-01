@@ -154,6 +154,7 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
@@ -271,4 +272,3 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net10.0\DevBoard.Api.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net10.0\DevBoard.Api.genruntimeconfig.cache
 C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\obj\Debug\net10.0\ref\DevBoard.Api.dll
-C:\Users\alesa\Documents\coding works\c#\DevBoard\src\DevBoard.Api\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll

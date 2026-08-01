@@ -1,11 +1,5 @@
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\.msCoverageSourceRootsMapping_DevBoard.Application.Tests
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\CoverletSourceRootsMapping_DevBoard.Application.Tests
-C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.csproj.AssemblyReference.cache
-C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.AssemblyInfoInputs.cache
-C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.AssemblyInfo.cs
-C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.csproj.CoreCompileInputs.cache
-C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.sourcelink.json
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\testhost.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\xunit.abstractions.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\testhost.exe
@@ -113,6 +107,12 @@ C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tes
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\DevBoard.Domain.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\DevBoard.Infrastructure.pdb
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\bin\Debug\net10.0\DevBoard.Shared.pdb
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.csproj.AssemblyReference.cache
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.AssemblyInfoInputs.cache
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.AssemblyInfo.cs
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.csproj.CoreCompileInputs.cache
+C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.sourcelink.json
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.3268E69E.Up2Date
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\DevBoard.Application.Tests.dll
 C:\Users\alesa\Documents\coding works\c#\DevBoard\tests\DevBoard.Application.Tests\obj\Debug\net10.0\refint\DevBoard.Application.Tests.dll

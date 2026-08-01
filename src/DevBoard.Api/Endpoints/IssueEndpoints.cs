@@ -59,7 +59,7 @@ public static class IssueEndpoints
     private static async Task<IResult> ChangeStatus(Guid id, IssueStatusRequest req, IIssueService service, CancellationToken ct)
     {
         await service.ChangeStatusAsync(id, req.NewStatus, ct);
-        return Results.NoContent();// a patch return 204 no content so better.
+        return Results.NoContent();
     }
     private static IResult StreamAuditLog(Guid id, IIssueService service, CancellationToken ct)
     {

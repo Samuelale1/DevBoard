@@ -7,17 +7,13 @@ using DevBoard.Infrastructure.Repositories;
 using DevBoard.Application.Options;
 using DevBoard.Api.Validators;
 using FluentValidation;
-using DevBoard.Api.Middleware;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using DevBoard.Infrastructure.Hubs;
-using Microsoft.Extensions.Http;
 using DevBoard.Infrastructure.BackgroundServices;
-using Npgsql.Replication.TestDecoding;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using DevBoard.Domain.Exceptions;
 
 
@@ -84,12 +80,15 @@ if (app.Environment.IsDevelopment())
     errbuilder.Run(async context =>
     {
         var ex = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>()?.Error;
+
+        Console.WriteLine($"[EXCEPTION HANDLER] Type: {ex?.GetType().FullName} | Message: {ex?.Message}");
+
         var (statusCode, message) = ex switch
         {
             DevBoardException dbEx => (dbEx.StatusCode, dbEx.Message),
             System.Text.Json.JsonException => (400, "The request body is malformed or contains invalid values."),
             BadHttpRequestException => (400, "The request body is malformed or contains invalid values."),
-            _ => (500, "An unexpected error occurred.")
+            _ => (500, $"DEBUG - Unmatched exception type: {ex?.GetType().FullName} | Message: {ex?.Message}")
         };
         context.Response.StatusCode = statusCode;
         context.Response.ContentType = "application/json";
@@ -118,7 +117,7 @@ app.MapHub<BoardHub>("/hubs/board");
 
 app.MapHealthChecks("/health");
 
-app.UseMiddleware<ExceptionMiddleware>();
+
 
 
 app.Run();

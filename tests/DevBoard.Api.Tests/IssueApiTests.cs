@@ -83,7 +83,7 @@ public sealed class IssueApiTests : IClassFixture<DevBoardWebApplicationFactory>
 
         var response = await client.PatchAsJsonAsync($"/api/issues/{issueId}/status", new { NewStatus = IssueStatus.Todo });
 
-        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
     }
 
     [Fact]
