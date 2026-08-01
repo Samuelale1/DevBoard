@@ -1,0 +1,14 @@
+
+name: Keep Alive
+
+on:
+  schedule:
+    - cron: '0 9 * * 1,4'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping health endpoint
+        run: curl -f https://your-app.onrender.com/health
