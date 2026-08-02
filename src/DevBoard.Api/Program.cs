@@ -42,7 +42,7 @@ builder.Services.AddHttpClient("webhook", c => c.Timeout = TimeSpan.FromSeconds(
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Frontend", policy =>
-        policy.WithOrigins("http://localhost:5173")
+        policy.WithOrigins("http://localhost:5173","https://dev-board-git-main-samuelale1s-projects.vercel.app" )
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials());
