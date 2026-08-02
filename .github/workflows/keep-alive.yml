@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping health endpoint
-        run: curl -f https://your-app.onrender.com/health
+        run: curl -f https://devboard-api-16ft.onrender.com/health
