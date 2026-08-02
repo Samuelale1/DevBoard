@@ -39,6 +39,15 @@ builder.Services.AddOptions<JwtOptions>().BindConfiguration("Jwt").ValidateDataA
 builder.Services.AddValidatorsFromAssemblyContaining<CreateIssueRequestValidator>();
 builder.Services.AddHttpClient("webhook", c => c.Timeout = TimeSpan.FromSeconds(10));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Frontend", policy =>
+        policy.WithOrigins("http://localhost:5173")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials());
+});
+
 var jwtSection = builder.Configuration.GetSection("Jwt");
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -113,7 +122,7 @@ app.MapGroup("/api/projects").RequireAuthorization().MapProjects();
 app.MapGroup("/api/issues").RequireAuthorization().MapIssues();
 
 app.MapHub<BoardHub>("/hubs/board");
-
+app.UseCors("Frontend");
 
 app.MapHealthChecks("/health");
 

@@ -1,7 +1,7 @@
 {
-  "DevBoard.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api",
-  "DevBoard.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application",
-  "DevBoard.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain",
-  "DevBoard.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure",
-  "DevBoard.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Shared"
+  "DevBoard.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Api",
+  "DevBoard.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Application",
+  "DevBoard.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Domain",
+  "DevBoard.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Infrastructure",
+  "DevBoard.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Shared"
 }
