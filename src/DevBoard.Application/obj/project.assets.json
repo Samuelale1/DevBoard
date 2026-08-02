@@ -1053,11 +1053,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
+      "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
       "projectName": "DevBoard.Application",
-      "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
+      "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
       "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\obj\\",
+      "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1079,14 +1079,14 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
-              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj"
+            "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj": {
+              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Domain\\DevBoard.Domain.csproj"
             },
-            "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj"
+            "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj"
             },
-            "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Shared\\DevBoard.Shared.csproj": {
-              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Shared\\DevBoard.Shared.csproj"
+            "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Shared\\DevBoard.Shared.csproj": {
+              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Shared\\DevBoard.Shared.csproj"
             }
           }
         }

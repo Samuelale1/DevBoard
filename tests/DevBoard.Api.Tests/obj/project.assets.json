@@ -3655,11 +3655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Api.Tests\\DevBoard.Api.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\tests\\DevBoard.Api.Tests\\DevBoard.Api.Tests.csproj",
       "projectName": "DevBoard.Api.Tests",
-      "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Api.Tests\\DevBoard.Api.Tests.csproj",
+      "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\tests\\DevBoard.Api.Tests\\DevBoard.Api.Tests.csproj",
       "packagesPath": "C:\\Users\\alesa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\tests\\DevBoard.Api.Tests\\obj\\",
+      "outputPath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\tests\\DevBoard.Api.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3681,8 +3681,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj": {
-              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj"
+            "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj": {
+              "projectPath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Api\\DevBoard.Api.csproj"
             }
           }
         }

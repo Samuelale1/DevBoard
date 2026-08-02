@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jJ76fWd6jDw=",
+  "dgSpecHash": "pasvguRyQS8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Infrastructure\\DevBoard.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alesa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",

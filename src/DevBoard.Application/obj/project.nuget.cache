@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lpZZHOfPWuI=",
+  "dgSpecHash": "HQVo3xQUUnM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alesa\\Documents\\coding works\\c#\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
+  "projectFilePath": "C:\\Users\\alesa\\Documents\\coding works\\csharp\\DevBoard\\src\\DevBoard.Application\\DevBoard.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alesa\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\alesa\\.nuget\\packages\\microsoft.bcl.cryptography\\10.0.2\\microsoft.bcl.cryptography.10.0.2.nupkg.sha512",
