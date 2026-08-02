@@ -1,12 +1,11 @@
-// src/App.tsx
+
 import { useEffect, useState } from "react";
-import { loginUser, fetchIssues, changeIssueStatus, setAccessToken, type Issue } from "./api/client";
+import { fetchIssues, changeIssueStatus, type Issue } from "./api/client";
 import { useSignalR } from "./hooks/useSignalR";
+import Auth from "./components/Auth";
 
 export default function App() {
   const [token, setToken] = useState<string | null>(null);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [projectId, setProjectId] = useState("");
   const [issues, setIssues] = useState<Issue[]>([]);
   const [error, setError] = useState("");
@@ -21,24 +20,8 @@ export default function App() {
 
   useEffect(() => { if (token && projectId) joinProject(projectId); }, [token, projectId]);
 
-  const handleLogin = async () => {
-    try {
-      const res = await loginUser(email, password);
-      setAccessToken(res.accessToken);
-      setToken(res.accessToken);
-    } catch (e) { setError(String(e)); }
-  };
-
   if (!token) {
-    return (
-      <div style={{ padding: 40 }}>
-        <h2>DevBoard Login</h2>
-        <input placeholder="email" value={email} onChange={e => setEmail(e.target.value)} /><br />
-        <input placeholder="password" type="password" value={password} onChange={e => setPassword(e.target.value)} /><br />
-        <button onClick={handleLogin}>Login</button>
-        {error && <p style={{ color: "red" }}>{error}</p>}
-      </div>
-    );
+    return <Auth onAuthenticated={setToken} />;
   }
 
   return (
@@ -54,6 +37,7 @@ export default function App() {
           </li>
         ))}
       </ul>
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );
 }

@@ -22,6 +22,12 @@ export interface Issue {
 }
 export interface PagedResult<T> { items: T[]; totalCount: number; page: number; pageSize: number }
 
+export const registerUser = (email: string, password: string, displayName: string, workspaceId: string) =>
+  request<LoginResponse>("/api/auth/register", {
+    method: "POST",
+    body: JSON.stringify({ email, password, displayName, workspaceId }),
+  });
+
 export const loginUser = (email: string, password: string) =>
   request<LoginResponse>("/api/auth/login", { method: "POST", body: JSON.stringify({ email, password }) });
 
