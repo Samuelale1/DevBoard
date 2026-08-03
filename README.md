@@ -2,7 +2,7 @@
 
 A project management / issue-tracking API and web client — a stripped-down GitHub Issues / Linear alternative, built end-to-end with **.NET 10**, **PostgreSQL (Supabase)**, and a **React + TypeScript** frontend, with real-time updates via **SignalR**, JWT authentication, background workers, and a full CI/CD pipeline to **Render**.
 
-Live demo: `https://devboard-<your-project>.vercel.app`
+Live demo: `https://dev-board-git-main-samuelale1s-projects.vercel.app`
 API base URL: `https://devboard-api-16ft.onrender.com`
 Interactive API docs (Scalar): `https://devboard-api-16ft.onrender.com/scalar/v1`
 
